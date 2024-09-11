@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "deep-learning-spec"
+version = "0.1.0"
+description = "A package supporting the deeplearning.ai specialisation."
+authors = ["Elliot Ebert <eajebert@gmail.com>"]
+packages = [{ include = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.8.0"
+pytest = "^8.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
